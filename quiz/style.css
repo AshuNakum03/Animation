@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background:black;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    position:relative;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    user-select: none;
+    margin: 3%;
+}
+button:before{
+    position: absolute;
+    content:'';
+    top: -2px;
+    left: -2px;
+    height:calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    background: linear-gradient(45deg,#ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation:animate 20s linear infinite;
+}
+button:before{
+    opacity: 1;
+}
+button:hover:active{
+    background: none;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 400% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+#para{
+    user-select: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#start{
+    display: none;
+    margin-top: 20px;
+}
+#ques
+{
+   padding: 10px;
+   border-radius: 10px;
+   margin-bottom:20%;
+   position: absolute;
+
+}

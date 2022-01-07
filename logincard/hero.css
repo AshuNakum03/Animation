@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login{
+    background-image: url('login1.png');
+    background-repeat: no-repeat;
+    height:100vh;
+    background-color: rgb(77, 77, 243);
+    /* background-size: cover; */
+   position: relative;
+   background-position: center center;
+  
+}
+.fh{
+     /* margin-top: 8%; */
+     justify-content: center;
+     align-items: center;
+     display: flex;
+    flex-direction: column;
+}
+.css{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 60vw;
+    max-width: 20vh;
+    margin-top: 21%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+
+.login .email{
+    position: relative;
+  }
+.login .email input {
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+  }
+  .login .email label {
+    position:absolute;
+    font-size: 16px;
+    left: 0;
+    color: white;
+    pointer-events: none; 
+    transition: .5s;
+  }
+.login .email input:focus ~ label,
+.login .email input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: black;
+  font-size: 12px;
+}
+.login .email span{
+  margin-right: 5px;
+}
+.login .password span:valid{
+  margin-right: 5px;
+  position: fixed;
+}
+.login .password{
+    position: relative;
+}
+  .login .password input {
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+  }
+  .login .password label {
+    position:absolute;
+    font-size: 16px;
+    left:0;
+    color: white;
+    pointer-events: none;
+    transition:  .5s;
+  }
+  .login .password input:focus ~ label,
+.login .password input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: black;
+  font-size: 12px;
+}
+.login button{
+    padding-bottom: 4px;
+    width:180px; 
+    border-radius: 20px;
+    color: white;
+    border: none;
+    background-color: black;
+}
